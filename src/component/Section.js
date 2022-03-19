@@ -1,9 +1,6 @@
 import React from 'react';
+import Article from './Article';
 
-/*
-  JSX안에서는 삼항연산자, map, 변수치환만 가능
-  해당 연산이 필요한 구문은 {}로 감싸줌
-*/
 
 function Section() {
   const arr = ['Blizzards', 'Calm', 'Dusty_Road', 'Escape', 'Payday', 'Retreat', 'Seasonal', 'Vespers'];
@@ -11,9 +8,7 @@ function Section() {
   return (
     <section>
       {arr.map((data, idx)=>{
-        return (
-          <article key={idx}>{data}</article>
-        )
+        return <Article key={idx} data={data} />
       })}
     </section>
   )
