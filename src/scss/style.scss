@@ -1,3 +1,22 @@
-.App {
-  h1 {color: aqua;}
+* {
+  margin: 0px; padding: 0px; box-sizing: border-box;
+}
+ul, ol, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 300px; height: 400px; 
+
+  article {
+    width: 100%; height: 100%; border: 1px solid #ddd;
+    padding: 20px; margin: 50px;
+
+    img {
+      width: 100%;
+    }
+  }
 }
